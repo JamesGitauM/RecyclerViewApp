@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".annie2"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Annie Owino"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="form 3"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="age 16"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/ic_sentiment_satisfied_black_24dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:text="press"
+        android:textAllCaps="true"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

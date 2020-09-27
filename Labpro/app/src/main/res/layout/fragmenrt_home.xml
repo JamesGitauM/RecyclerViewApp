@@ -1,0 +1,128 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+
+        android:padding="10dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_graph"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Below is a summary of your activities"
+            android:textSize="15sp" />
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundfield"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nofsamples"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="20dp"
+                    android:text="50"
+                    android:textAllCaps="true"
+                    android:textSize="40sp" />
+                <TextView
+                    android:id="@+id/samplescollected"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Samples Collected"
+                    android:layout_below="@id/nofsamples"
+                    android:textSize="13sp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/noffarms"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="12"
+                    android:textAllCaps="true"
+                    android:textSize="40sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/nofsamples"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/cfv"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Client Farms Visited"
+                    android:layout_below="@id/noffarms"
+                    android:layout_toRightOf="@id/samplescollected"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:id="@+id/commissionamt"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="120000"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/noffarms"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Commission Earned"
+                    android:layout_below="@id/noffarms"
+                    android:layout_toRightOf="@id/cfv"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Ksh"
+                    android:textAllCaps="true"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/commissionamt"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.core.widget.NestedScrollView>
+
